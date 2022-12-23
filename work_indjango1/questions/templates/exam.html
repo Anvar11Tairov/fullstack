@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>exam with anvar</title>
+</head>
+<body>
+    <h2>User time enteres</h2>
+    <form method="post" action="postuser/">
+        {% csrf_token %}
+        <p>Name:<br> <input name="name" /></p>
+        <p>time:<br> <input name="time" type="number" /></p>
+        <input type="submit"  value="Send"/>
+    </form>
+</body>
+</html>
